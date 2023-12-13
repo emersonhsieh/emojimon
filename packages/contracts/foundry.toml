@@ -9,11 +9,12 @@ src = "src"
 test = "test"
 out = "out"
 allow_paths = ["../../node_modules", "../../../../packages"]
-extra_output_files = [
-  "abi",
-  "evm.bytecode"
-]
-fs_permissions = [{ access = "read", path = "./"}]
+extra_output_files = ["abi", "evm.bytecode"]
+fs_permissions = [{ access = "read", path = "./" }]
 
 [profile.lattice-testnet]
 eth_rpc_url = "https://follower.testnet-chain.linfra.xyz"
+
+[profile.redstone]
+eth_rpc_url = "https://rpc.holesky.redstone.xyz"
+chain_id = 17001

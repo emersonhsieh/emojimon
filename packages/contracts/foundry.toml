@@ -15,6 +15,10 @@ fs_permissions = [{ access = "read", path = "./" }]
 [profile.lattice-testnet]
 eth_rpc_url = "https://follower.testnet-chain.linfra.xyz"
 
-[profile.redstone]
+[profile.caldera-sepolia]
+eth_rpc_url = "https://primodium-sepolia.rpc.caldera.xyz/http"
+chain_id = 10017
+
+[profile.redstone-holesky]
 eth_rpc_url = "https://rpc.holesky.redstone.xyz"
 chain_id = 17001
